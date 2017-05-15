@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEX - Hoy te ayudo, mañana me ayudas</title>
+	<link rel="stylesheet" type="text/css" href="https://dl.dropbox.com/s/wqlyxllsuoibjw0/login.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta charset="utf-8">
+
+</head>
+<body>
+<div class= container>
+	<div class="superior">
+		
+	</div>
+
+	<div class="medio">
+		<div class="row">
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-4 formulario">
+				<div>
+					<h1>DEX</h1>
+				</div>
+				<div>
+					<h3>Ayudas Comunitarias</h3>
+				</div>
+				<form method="POST">{% csrf_token %}
+					<div class="form-group">
+						<label>Correo/Número Celular</label>
+						{{forma.nombre}}
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						{{forma.clave}}
+
+					</div>
+					<div class="">
+						<a href="http://www.google.com">¿Ha olvidado su contraseña?</a>
+					</div>
+					<div class="divBoton">
+						<button type="submit" class="btn btn-default">Ingresar</button>
+						<button class="btn btn-default pull-right" onClick="window.location='http://127.0.0.1:8000/registro';" value="registro" >Registro</button>
+					</div>
+					
+
+				</form>
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="inferior">
+		
+	</div>
+</div>
+	
+</body>
+</html>
